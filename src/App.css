@@ -1,0 +1,9 @@
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 400 to 900 */
+
+.playfair-display-main-font {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400, 500, 600, 700, 800, 900;
+    font-style: normal;
+}
