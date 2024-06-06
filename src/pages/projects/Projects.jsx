@@ -25,7 +25,7 @@ const Projects = () => {
                 <div className='pt-28 bg-gray-300' >
                     {/* Projects Main Banner */}
                     <div className='max-w-screen-2xl mx-auto' >
-                        <h1 className='text-gray-800 font-display font-extrabold text-[80px] tracking-wide hover:text-white transition duration-300 text-center mb-20' > Our Projects </h1>
+                        <h1 className='text-gray-800 font-display font-extrabold text-[80px] tracking-wide hover:text-white transition duration-300 text-center mb-32' > Our Projects </h1>
                         <div className='flex flex-col sm:flex-row space-y-5 sm:space-y-0 px-5 sm:px-0 justify-center items-center' >
                             <img src={main1} className='sm:h-[500px] sm:w-[50%] object-cover' alt="This is our recent projects" />
                             <div className='sm:w-[5%]' ></div>
