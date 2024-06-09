@@ -3,6 +3,7 @@ import Layout from '../../components/layouts/Layout'
 import img1 from "../../assets/container2.webp";
 import { useCom } from '../../context/ComContext';
 import img2 from "../../assets/h2.webp";
+import img3 from "../../assets/h3.webp";
 import HomesBox from '../../components/HomesBox';
 import { NavLink } from 'react-router-dom';
 
@@ -20,8 +21,8 @@ const Homes = () => {
     },
     {
       id: 2,
-      image: img2,
-      name: "The Silver Mansion",
+      image: img3,
+      name: "The Beauty Palace",
       desc: "Beautiful Tiny House for Sale",
       downP: 8000,
       installment: "450-6500"
@@ -36,14 +37,14 @@ const Homes = () => {
         {/* Image Banner */}
         <div className='flex items-center justify-center' >
           <img src={img1} className='w-full h-[500px] object-cover' alt="Sorry" />
-          <h1 className='absolute top-0 flex items-center justify-center font-display text-6xl font-bold text-gray-300 text-center mt-48 tracking-wide' > Browse and Buy Homes From Us to Live Happily </h1>
+          <h1 className='absolute top-0 flex items-center justify-center font-display text-4xl sm:text-6xl font-bold text-gray-300 text-center mt-48 tracking-wide' > Browse and Buy Homes From Us to Live Happily </h1>
         </div>
 
         {/* Main Homes section */}
         <div className='py-28 sm:max-w-screen-2xl sm:mx-auto' >
           {
             homeInfo.map((i) => (
-              <NavLink key={i.id}>
+              <NavLink to={"/knowMore"} key={i.id}>
                 <HomesBox homeInfo={i} />
               </NavLink>
             ))
