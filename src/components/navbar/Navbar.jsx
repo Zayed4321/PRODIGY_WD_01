@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { useCom } from '../../context/ComContext';
 
 const Navbar = () => {
@@ -31,12 +31,14 @@ const Navbar = () => {
                                 <li>
                                     <Link className='font-display text-md font-medium' >Services</Link>
                                     <ul className="pl-5 flex flex-col space-y-3">
-                                        <Link to={"/consultation"} ><a className='text-md font-bold font-display text-center' >Consultation</a></Link>
-                                        <Link to={"/construction"} ><a className='text-md font-bold font-display text-center' >Construction</a></Link>
-                                        <Link to={"/interior"} ><a className='text-md font-bold font-display text-center' >Interior</a></Link>
+                                        <NavLink to="/consultation" className='text-md font-bold font-display text-center'>Consultation</NavLink>
+                                        <NavLink to="/construction" className='text-md font-bold font-display text-center'>Construction</NavLink>
+                                        <NavLink to="/interior" className='text-md font-bold font-display text-center'>Interior</NavLink>
                                     </ul>
+
                                 </li>
                                 <li><Link to={"/projects"} className='font-display text-md font-medium' >Projects</Link></li>
+                                <li><Link to={"/homes"} className='font-display text-md font-medium' >Products</Link></li>
                                 <li><Link to={"/about"} className='font-display text-md font-medium' >About us</Link></li>
                                 <li><Link to={"/contact"} className='font-display text-md font-medium' >Contact us</Link></li>
                             </ul>
@@ -50,18 +52,19 @@ const Navbar = () => {
                                 <details>
                                     <summary><Link className='font-display text-lg font-medium' >Services</Link></summary>
                                     <ul className="pl-5 flex flex-col space-y-3">
-                                        <Link to={"/consultation"} ><a className='text-lg font-bold font-display text-center mr-5' >Consultation</a></Link>
-                                        <Link to={"/construction"} ><a className='text-lg font-bold font-display text-center mr-5' >Construction</a></Link>
-                                        <Link to={"/interior"} ><a className='text-lg font-bold font-display text-center mr-5' >Interior</a></Link>
+                                        <NavLink to="/consultation" className='text-md font-bold font-display text-center'>Consultation</NavLink>
+                                        <NavLink to="/construction" className='text-md font-bold font-display text-center'>Construction</NavLink>
+                                        <NavLink to="/interior" className='text-md font-bold font-display text-center'>Interior</NavLink>
                                     </ul>
                                 </details>
                             </li>
                             <li><Link to={"/projects"} className='font-display text-lg font-medium pr-5 ml-3' >Projects</Link></li>
+                            <li><Link to={"/homes"} className='font-display text-lg font-medium pr-5 ml-3' >Products</Link></li>
                             <li><Link to={"/contact"} className='font-display text-lg font-medium ml-3' >Contact us</Link></li>
                         </ul>
                     </div>
                     <div className="navbar-end hidden sm:flex">
-                        <a href="#be-our-customer" class="bg-gray-800 text-white font-bold py-3 px-5 rounded-full hover:bg-gray-500 transition duration-300 mr-8">+ Be Our Client</a>
+                        <a href="#be-our-customer" className="bg-gray-800 text-white font-bold py-3 px-5 rounded-full hover:bg-gray-500 transition duration-300 mr-8">+ Be Our Client</a>
                     </div>
                 </div>
             </div>
