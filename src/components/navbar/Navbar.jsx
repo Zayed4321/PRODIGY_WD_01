@@ -51,10 +51,10 @@ const Navbar = () => {
                             <li className='ml-5' >
                                 <details>
                                     <summary><Link className='font-display text-lg font-medium' >Services</Link></summary>
-                                    <ul className="pl-5 flex flex-col space-y-3">
-                                        <NavLink to="/consultation" className='text-md font-bold font-display text-center'>Consultation</NavLink>
-                                        <NavLink to="/construction" className='text-md font-bold font-display text-center'>Construction</NavLink>
-                                        <NavLink to="/interior" className='text-md font-bold font-display text-center'>Interior</NavLink>
+                                    <ul className="flex flex-col space-y-3">
+                                        <NavLink to="/consultation" className='text-md font-bold font-display text-lg p-2 hover:bg-slate-300 hover:rounded-lg transition duration-300 ease-in '>Consultation</NavLink>
+                                        <NavLink to="/construction" className='text-md font-bold font-display text-lg p-2 hover:bg-slate-300 hover:rounded-lg transition duration-300 ease-in '>Construction</NavLink>
+                                        <NavLink to="/interior" className='text-md font-bold font-display text-lg p-2 hover:bg-slate-300 hover:rounded-lg transition duration-300 ease-in '>Interior</NavLink>
                                     </ul>
                                 </details>
                             </li>

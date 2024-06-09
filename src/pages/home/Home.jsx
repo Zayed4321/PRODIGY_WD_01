@@ -29,11 +29,11 @@ const Home = () => {
                         <p className='text-white font-display font-medium text-md pr-2'>{comName}. Custom homes, crafted with distinction. We don't build houses, we build legacies.</p>
                         <div className='w-32 h-3 bg-gray-300 mt-10 rounded-md' ></div>
                     </div>
-                    <div className='absolute bottom-48 left-10 sm:bottom-64 sm:left-52' >
-                        <h1 className='text-gray-300 font-display font-extrabold text-[150px] hidden sm:flex tracking-wide hover:text-white transition duration-300' > {comName} </h1>
+                    <div className='absolute bottom-48 left-10 sm:top-72 sm:left-52' >
+                        <h1 className='text-gray-100 font-display font-extrabold text-[180px] hidden sm:flex tracking-wide hover:text-white transition duration-300' > {comName} </h1>
                     </div>
                     <div className='sm:w-[70%]' >
-                        <img src={bannerimg} className='sm:max-w-[1000px] w-full' alt="Image of a Beautiful Container Home for Sell" />
+                        <img src={bannerimg} className='sm:max-w-[1000px] w-full rounded-lg' alt="Image of a Beautiful Container Home for Sell" />
                     </div>
                 </div>
             </div>

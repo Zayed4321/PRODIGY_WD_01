@@ -4,7 +4,7 @@ const MyComContext = createContext();
 
 const ComWrapper = ({ children }) => {
 
-    const [comName, setComName] = useState("Containers Near Me");
+    const [comName, setComName] = useState("Tiny Home Sales");
 
     return (
         <MyComContext.Provider value={[comName, setComName]} >
